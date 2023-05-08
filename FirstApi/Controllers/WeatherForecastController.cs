@@ -13,41 +13,33 @@ public class WeatherForecastController : ControllerBase
 {
     // 强制传参写在HttpGet里 伪静态
     // 如果不强制 就是动态地址 根据穿的值不同获取的数据是不同的 由？拼接
-    [HttpGet("{i}")]
-    // [Route("Get")]
-    public string Get(int i)
-    {
-        return "Nice" + i;
-    }
+    
+
+    
     [HttpGet("{i}/{name}")]
     // [Route("Get1")]
-    public string Get1(int i,string name)
+    public string Get(int i,string name)
     {
         return name + i;
     }
     // 路由规则可以自定义 不是一定要用 '/'
     [HttpGet("{i}-{name}")]
-    // [Route("Get2")]
-    public string Get2(int i,string name)
-    {
-        return name + i;
-    }
+
     // 插入数据 （增）
     // 获取的数据与前端穿过来的不一致 需要建立一个数据模型用来改变数据格式
+    // TestPostViewModel 上传的请求实体
     [HttpPost]
     public string Post(TestPostViewModel model)
     {
-        return "Post method + model.I + model.Name";
+        return model.I + model.Name;
     }
-    // 修改数据 （改）
+    // 修改数据 （改） 一般是 id + 实体
     [HttpPut]
-    public string Put()
+    public void Put(int id, TestputViewModel model)
     {
-        return "Put method";
     }
     [HttpDelete]
-    public string Delete()
+    public void Delete(int id)
     {
-        return "Delete method";
     }
 }

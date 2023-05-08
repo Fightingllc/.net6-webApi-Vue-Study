@@ -21,7 +21,7 @@
             const message = ref("hello vue")
             const onGetValue = () => {
                 // message.value = "morning"
-                axios.get("http://localhost:5247/api/WeatherForecast/Get1/222/morning")
+                axios.get("http://localhost:5247/api/WeatherForecast/Get/222/morning")
                     .then(res => {
                         console.log(res);
                         const {data} = res;
@@ -32,8 +32,8 @@
             const onPostValue = () => {
                 // message.value = "morning"
                 axios.post("http://localhost:5247/api/WeatherForecast/Post",{
-                    id:999,
-                    name: "Nice to meet"
+                    id: 999,
+                    name: "Nice to meet you"
                 })
                     .then(res => {
                         console.log(res);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Morning\\后端\\FirstApi\\FirstApi.csproj": {}
+    "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\FirstApi.csproj": {}
   },
   "projects": {
-    "E:\\Morning\\后端\\FirstApi\\FirstApi.csproj": {
+    "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\FirstApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Morning\\后端\\FirstApi\\FirstApi.csproj",
+        "projectUniqueName": "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\FirstApi.csproj",
         "projectName": "FirstApi",
-        "projectPath": "E:\\Morning\\后端\\FirstApi\\FirstApi.csproj",
+        "projectPath": "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\FirstApi.csproj",
         "packagesPath": "C:\\Users\\jiang\\.nuget\\packages\\",
-        "outputPath": "E:\\Morning\\后端\\FirstApi\\obj\\",
+        "outputPath": "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jiang\\AppData\\Roaming\\NuGet\\NuGet.Config",

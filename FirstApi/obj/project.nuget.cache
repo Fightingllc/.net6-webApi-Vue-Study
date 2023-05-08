@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6RQxUEloieBdzLaI4zrRR834rTcGiRhEPLXqY1R8pAeO44U3pSMg1mi0JNxfFw8x4X6BRgiBzMvaj2IG+HOVbA==",
+  "dgSpecHash": "dlzEP24voKX73fV/pQdoClfiCggEubnGKW6gY0aX4IoRtWGcKtx2bhFaGM5vwFkT7UQg0l2qLMJwGYQO7STuMg==",
   "success": true,
-  "projectFilePath": "E:\\Morning\\后端\\FirstApi\\FirstApi.csproj",
+  "projectFilePath": "E:\\Morning\\后端\\.net6-webApi-Vue-Study\\FirstApi\\FirstApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiang\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\jiang\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
