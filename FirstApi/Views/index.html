@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app">{{ message }}
+        <button @click="onGetValue">getValue</button>
+        <button @click="onPostValue">onPostValue</button>
+    </div>
+    <script>
+      const { createApp,ref } = Vue;
+
+      createApp({
+        setup() {
+            const message = ref("hello vue")
+            const onGetValue = () => {
+                // message.value = "morning"
+                axios.get("http://localhost:5247/api/WeatherForecast/Get1/222/morning")
+                    .then(res => {
+                        console.log(res);
+                        const {data} = res;
+                        message.value = data
+                    })
+            }
+
+            const onPostValue = () => {
+                // message.value = "morning"
+                axios.post("http://localhost:5247/api/WeatherForecast/Post",{
+                    id:999,
+                    name: "Nice to meet"
+                })
+                    .then(res => {
+                        console.log(res);
+                        const {data} = res;
+                        message.value = data
+                    })
+            }
+            return {message,onGetValue,onPostValue}
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
