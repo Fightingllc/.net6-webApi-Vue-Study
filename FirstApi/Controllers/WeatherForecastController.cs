@@ -14,8 +14,6 @@ public class WeatherForecastController : ControllerBase
     // 强制传参写在HttpGet里 伪静态
     // 如果不强制 就是动态地址 根据穿的值不同获取的数据是不同的 由？拼接
     
-
-    
     [HttpGet("{i}/{name}")]
     // [Route("Get1")]
     public string Get(int i,string name)
